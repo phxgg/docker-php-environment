@@ -20,3 +20,17 @@ MySQL: `localhost:9906`
   - root password: `toor`
   - database user: `dbuser`
   - database password: `dbpass`
+
+## Import database .sql file
+
+```bash
+docker exec -i db mysql -uroot -ptoor phpapp < data.sql
+```
+
+For windows use:
+
+```bash
+type data.sql | docker exec -i db mysql -uroot -ptoor phpapp
+```
+
+or use PHPMyAdmin.
